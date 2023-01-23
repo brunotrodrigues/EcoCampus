@@ -18,6 +18,9 @@ async function onSubmit(values) {
 
 <template>
   <div class="wrapper">
+    <div class="image">
+      <img src="../img/ECOCAMPUS.png" alt="">
+    </div>
     <div class="card">
       <h4 class="card-header">Login</h4>
       <div class="card-body">
@@ -30,6 +33,7 @@ async function onSubmit(values) {
             <label>Username</label>
             <Field
               name="username"
+              placeholder="exemplo"
               type="text"
               class="form-control"
               :class="{ 'is-invalid': errors.username }"
@@ -41,6 +45,7 @@ async function onSubmit(values) {
             <Field
               name="password"
               type="password"
+              placeholder="exemplo"
               class="form-control"
               :class="{ 'is-invalid': errors.password }"
             />
@@ -86,6 +91,7 @@ async function onSubmit(values) {
   background-color: rgb(77, 187, 110);
   color: white;
   border: none;
+  text-align: center;
 }
 
 .formBtns {

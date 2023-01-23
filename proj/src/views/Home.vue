@@ -8,8 +8,12 @@ const { user } = storeToRefs(authStore);
 </script>
 
 <template>
-    <div v-if="user">
+    <!-- <div v-if="user">
         <h1>Bem-vindo {{user.firstName}}!</h1>
         <p><router-link to="/users">Manage Users</router-link></p>
+    </div> -->
+    <div>
+        
     </div>
+
 </template>
