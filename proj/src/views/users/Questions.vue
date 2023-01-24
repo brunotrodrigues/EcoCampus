@@ -9,114 +9,103 @@
 
     const questions = ref([
         {
+            id:1,
             questions: 'Em tua casa é habitual separar alguns resíduos e colocá-los para reciclar por exemplo no ecoponto?',
-            answer: 0,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
+            id:2,
             questions: 'Quando lavas os dentes a torneia do lavatório está aberta?',
-            answer: 1,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
+            id:3,
             questions: 'Lá em casa é costume apagar a televisão deixando-a em Stand By (desligar com o comando)?',
-            answer: 2,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
+            id:4,
             questions: 'Costumas ouvir música muito alto?',
-            answer: 3,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
+            id:5,
             questions: 'Na tua casa existe o hábito de comprar produtos biológicos?',
-            answer: 4,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
+            id:6,
             questions: 'Se pudesses optar entre autocarro e comboio para o mesmo percurso, qual escolherias?',
-            answer: 5,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
+            id:7,
             questions: 'Se existisse uma campanha de limpeza de praia, com que frequencia irias participar?',
-            answer: 6,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
-            questions: '',
-            answer: 7,
-            options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
-            ],
-            selected: null,
-        },
-        {
+            id:8,
             questions: 'Como te deslocas para a escola? A pé, de bicicleta ou transportes públicos?',
-            answer: 8,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         },
         {
+            id:9,
             questions: 'Como te deslocas para a escola? Em viatura privada?',
-            answer: 9,
             options: [
-                'Sempre',
-                'Quase Sempre',
-                'Ás vezes',
-                'Nunca'
+                {value: 0, choice:'Sempre'},
+                {value: 1, choice:'Quase Sempre'},
+                {value: 2, choice:'Ás vezes'},
+                {value: 3, choice:'Nunca'},
             ],
-            selected: null,
+            answer: null,
         }
     ])
 

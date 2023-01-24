@@ -4,7 +4,7 @@ export default {
     return {
       items: [
         { id: 1, name: "Atividade 1", description: "Limpar as ruas" },
-        { id: 2, name: "Atividade 2", description: "This is item 2" },
+        { id: 2, name: "Atividade 2", description: "Limpar as florestas" },
         { id: 3, name: "Atividade 3", description: "This is item 3" },
       ],
     };
