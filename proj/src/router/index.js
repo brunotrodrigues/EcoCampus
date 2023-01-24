@@ -4,6 +4,7 @@ import { useAlertStore, useAuthStore } from "@/stores";
 import { Home } from "@/views";
 import accountRoutes from "./account.routes";
 import activitiesRoutes from "./activities.routes";
+import questionsRoutes from "./questions.routes";
 import usersRoutes from "./users.routes";
 
 export const router = createRouter({
@@ -13,6 +14,7 @@ export const router = createRouter({
     { path: "/", component: Home },
     { ...accountRoutes },
     { ...activitiesRoutes },
+    {...questionsRoutes },
     { ...usersRoutes },
     // catch all redirect to home page
     { path: "/:pathMatch(.*)*", redirect: "/" },

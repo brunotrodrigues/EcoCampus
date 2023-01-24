@@ -12,6 +12,8 @@ export default {
 };
 </script>
 
+<!-- fazer form  -->
+
 <template>
   <div class="activitiesWrapper">
     <div class="cardsGrid">
