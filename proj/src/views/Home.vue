@@ -13,7 +13,11 @@ const { user } = storeToRefs(authStore);
         <p><router-link to="/users">Manage Users</router-link></p>
     </div> -->
     <div>
-        
+        <h1></h1>
+        <p>Esta aplicação tem como principal objetivo apoiar os alunos envolvidos no projeto eco-escolas.</p>
+        <p>Pretendemos elucidar os alunos a participarem em atividades, fazer registo de
+        problemas associados ao ambiente e proporcionar um melhor estilo de vida no que toca à
+        poupança e conservação do ambiente.</p>
     </div>
 
 </template>
