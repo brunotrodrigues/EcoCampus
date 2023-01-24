@@ -86,10 +86,9 @@ async function onSubmit(values) {
             </div>
             <div class="form-group">
                 <button class="btn btn-primary" :disabled="isSubmitting">
-                    <span v-show="isSubmitting" class="spinner-border spinner-border-sm mr-1"></span>
-                    Save
+                    <span v-show="isSubmitting" class="spinner-border spinner-border-sm mr-1"></span>Guardar
                 </button>
-                <router-link to="/users" class="btn btn-link">Cancel</router-link>
+                <router-link to="/users" class="btn btn-link">Cancelar</router-link>
             </div>
         </Form>
     </template>
