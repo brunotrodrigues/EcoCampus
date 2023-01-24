@@ -23,16 +23,16 @@ if (id) {
 
 const schema = Yup.object().shape({
     firstName: Yup.string()
-        .required('First Name is required'),
+        .required('Primeiro nome é necessario'),
     lastName: Yup.string()
-        .required('Last Name is required'),
+        .required('Ultimo nome é necessario'),
     username: Yup.string()
-        .required('Username is required'),
+        .required('Username é necessario'),
     password: Yup.string()
         .transform(x => x === '' ? undefined : x)
         // password optional in edit mode
-        .concat(user ? null : Yup.string().required('Password is required'))
-        .min(6, 'Password must be at least 6 characters')
+        .concat(user ? null : Yup.string().required('Password é necessario'))
+        .min(6, 'Password tem que ter pelo menos 6 caracteres')
 });
 
 async function onSubmit(values) {
@@ -59,12 +59,12 @@ async function onSubmit(values) {
         <Form @submit="onSubmit" :validation-schema="schema" :initial-values="user" v-slot="{ errors, isSubmitting }">
             <div class="form-row">
                 <div class="form-group col">
-                    <label>First Name</label>
+                    <label>Primeiro Nome</label>
                     <Field name="firstName" type="text" class="form-control" :class="{ 'is-invalid': errors.firstName }" />
                     <div class="invalid-feedback">{{ errors.firstName }}</div>
                 </div>
                 <div class="form-group col">
-                    <label>Last Name</label>
+                    <label>Ultimo Nome</label>
                     <Field name="lastName" type="text" class="form-control" :class="{ 'is-invalid': errors.lastName }" />
                     <div class="invalid-feedback">{{ errors.lastName }}</div>
                 </div>
@@ -78,7 +78,7 @@ async function onSubmit(values) {
                 <div class="form-group col">
                     <label>
                         Password
-                        <em v-if="user">(Leave blank to keep the same password)</em>
+                        <em v-if="user">(Deixa em branco para manter a password)</em>
                     </label>
                     <Field name="password" type="password" class="form-control" :class="{ 'is-invalid': errors.password }" />
                     <div class="invalid-feedback">{{ errors.password }}</div>
