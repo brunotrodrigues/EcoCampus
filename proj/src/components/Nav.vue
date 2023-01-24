@@ -7,7 +7,7 @@ const authStore = useAuthStore();
 <template>
   <nav v-show="authStore.user" class="navbar navbar-expand navbar-dark">
     <div class="navbar-nav">
-      <img src="../views/img/ECOCAMPUS.png" alt="">
+      <img src="../views/img/ecocampus2.svg" alt="">
       <!-- <div> -->
         <router-link to="/" class="nav-item nav-link">Home</router-link>
         <router-link to="/activities" class="nav-item nav-link">Atividades</router-link>
