@@ -13,6 +13,7 @@ const { user } = storeToRefs(authStore);
         <p><router-link to="/users">Manage Users</router-link></p>
     </div> -->
     <div>
+        <!-- <img class="image" src="../assets/image4.jpg" alt=""> -->
         <h1></h1>
         <p>Esta aplicação tem como principal objetivo apoiar os alunos envolvidos no projeto eco-escolas.</p>
         <p>Pretendemos elucidar os alunos a participarem em atividades, fazer registo de
@@ -39,30 +40,30 @@ const { user } = storeToRefs(authStore);
 
         <!-- footer -->
         <footer>
-    <div class="firstContainer container">
-      <img src="../assets/ecocampus2.svg" alt="Logo" id="logo" />
-    </div>
-    <div class="secondContainer container">
-      <span>ECOCAMPUS, Inc. © 2023</span>
-      <p>
-        A <span class="bold">ECOCAMPUS</span> é um projeto da
-        <span class="bold">Escola Superior de Media Artes e Design</span>
-        do
-        <span class="bold">Instituto Politécnico do Porto</span>
-      </p>
-    </div>
-    <div class="thirdContainer container">
-      <router-link to="#">Privacidade</router-link>
-      <router-link to="#">Termos de Utilização</router-link>
-      <router-link to="#">Contactos</router-link>
-    </div>
-    <div class="forthContainer container">
-      <img src="../assets/instagram-svgrepo-com.svg" alt="" class="social" />
-      <img src="../assets/facebook-svgrepo-com.svg" alt="" class="social" />
-      <img src="../assets/tiktok-svgrepo-com.svg" alt="" class="social" />
-      <img src="../assets/twitter-svgrepo-com.svg" alt="" class="social" />
-    </div>
-  </footer>
+          <div class="firstContainer container">
+            <img src="../assets/ecocampus2.svg" alt="Logo" id="logo" />
+          </div>
+          <div class="secondContainer container">
+            <span>ECOCAMPUS, Inc. © 2023</span>
+            <p>
+              A <span class="bold">ECOCAMPUS</span> é um projeto da
+              <span class="bold">Escola Superior de Media Artes e Design</span>
+              do
+              <span class="bold">Instituto Politécnico do Porto</span>
+            </p>
+          </div>
+          <div class="thirdContainer container">
+            <router-link to="#">Privacidade</router-link>
+            <router-link to="#">Termos de Utilização</router-link>
+            <router-link to="#">Contactos</router-link>
+          </div>
+          <div class="forthContainer container">
+            <img src="../assets/instagram-svgrepo-com.svg" alt="" class="social" />
+            <img src="../assets/facebook-svgrepo-com.svg" alt="" class="social" />
+            <img src="../assets/tiktok-svgrepo-com.svg" alt="" class="social" />
+            <img src="../assets/twitter-svgrepo-com.svg" alt="" class="social" />
+          </div>
+        </footer>
     </div>
 
 </template>
@@ -77,6 +78,10 @@ footer {
   grid-template-columns: minmax(80px, 8%) 300px auto 430px;
 }
 
+.image {
+  width: 100%;
+}
+
 .container {
   display: flex;
 }
@@ -85,6 +90,7 @@ footer {
   height: 120px;
   position: absolute;
   grid-column: 1/2;
+  justify-content: center;
 }
 
 .container2 {
@@ -102,7 +108,7 @@ footer {
 }
 
 .headerContainer2 {
-	font-size: 84px;
+	font-size: 80px;
 	font-family: 'Gilroy', sans-serif;
 	font-weight: bold;
 	text-align: center;
