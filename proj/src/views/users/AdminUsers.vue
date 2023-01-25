@@ -25,7 +25,7 @@ const schema = Yup.object().shape({
     firstName: Yup.string()
         .required('Primeiro nome é necessario'),
     lastName: Yup.string()
-        .required('Ultimo nome é necessario'),
+        .required('Apelido é necessario'),
     username: Yup.string()
         .required('Username é necessario'),
     password: Yup.string()

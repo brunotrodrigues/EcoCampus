@@ -19,10 +19,17 @@ const { user } = storeToRefs(authStore);
         problemas associados ao ambiente e proporcionar um melhor estilo de vida no que toca à
         poupança e conservação do ambiente.</p>
 
-        <div>
-            <h2>O que é o programa Eco-Escolas?</h2>
-            <p>Eco-Escolas é um programa internacional da “Foundation for Environmental Education”, desenvolvido em Portugal desde 1996 pela ABAE. Pretende encorajar ações e reconhecer o trabalho de qualidade desenvolvido pela escola, no âmbito da Educação Ambiental para a Sustentabilidade.
-O programa é coordenado a nível internacional, nacional, regional e de escola. Esta coordenação multinível permite a confluência para objetivos, metodologias e critérios comuns que respeitam a especificidade de cada escola relativamente aos seus alunos e caraterísticas do meio envolvente.</p>
+        <div class="container2">
+            <h2 class="headerContainer2">O que é o programa Eco-Escolas?</h2>
+            <span class="span">
+              Eco-Escolas é um programa internacional da “Foundation for Environmental Education”, desenvolvido em Portugal desde 1996 
+              pela ABAE.
+              Pretende encorajar ações e reconhecer o trabalho de qualidade desenvolvido pela escola, no âmbito da Educação Ambiental 
+              para a Sustentabilidade. O programa é coordenado a nível internacional, nacional, regional e de escola. 
+              Esta coordenação multinível permite a confluência para objetivos, metodologias e critérios comuns que respeitam a 
+              especificidade de cada escola relativamente aos seus alunos e caraterísticas do meio envolvente.
+            </span>
+            
         </div>
 
         <div>
@@ -78,6 +85,40 @@ footer {
   height: 120px;
   position: absolute;
   grid-column: 1/2;
+}
+
+.container2 {
+	margin-top: 3%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.headerContainer2 {
+	max-width: 830px;
+	text-align: center;
+}
+
+.headerContainer2 {
+	font-size: 84px;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	line-height: 88.5%;
+	margin-bottom: 20px;
+}
+
+/* .headerContainer2 {
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 600;
+	color: #b4b4b4;
+} */
+.span {
+	margin-top: 10px;
+  font-family: 'Gilroy', sans-serif;
+  width: 50%;
 }
 
 #logo {

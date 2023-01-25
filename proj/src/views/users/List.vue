@@ -16,7 +16,7 @@ usersStore.getAll();
         <thead>
             <tr>
                 <th style="width: 30%">Primeiro Nome</th>
-                <th style="width: 30%">Ultimo Nome</th>
+                <th style="width: 30%">Apelido</th>
                 <th style="width: 30%">Username</th>
                 <th style="width: 10%"></th>
             </tr>

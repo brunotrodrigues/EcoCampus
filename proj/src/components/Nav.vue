@@ -13,7 +13,7 @@ const authStore = useAuthStore();
         <router-link to="/activities" class="nav-item nav-link">Atividades</router-link>
         <router-link to="/questions" class="nav-item nav-link">Questionarios</router-link>
         <router-link to="/users" class="nav-item nav-link">AdminUsers</router-link>
-        <router-link to="/" class="nav-item nav-link">Perfil</router-link>
+        <router-link to="/editProfile" class="nav-item nav-link">Perfil</router-link>
         <button @click="authStore.logout()" class="btn btn-link nav-item nav-link">Logout</button>
       <!-- </div> -->
     </div>
