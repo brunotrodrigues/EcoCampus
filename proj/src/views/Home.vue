@@ -19,7 +19,7 @@ const { user } = storeToRefs(authStore);
         Pretendemos elucidar os alunos a participarem em atividades, fazer registo de
         problemas associados ao ambiente e proporcionar um melhor estilo de vida no que toca à
         poupança e conservação do ambiente.</span>
-    </div>
+      </div>
         <div class="container2">
             <h2 class="headerContainer2">O que é o programa Eco-Escolas?</h2>
             <span class="span">
@@ -29,10 +29,8 @@ const { user } = storeToRefs(authStore);
               para a Sustentabilidade. O programa é coordenado a nível internacional, nacional, regional e de escola. 
               Esta coordenação multinível permite a confluência para objetivos, metodologias e critérios comuns que respeitam a 
               especificidade de cada escola relativamente aos seus alunos e caraterísticas do meio envolvente.
-            </span>
-            
+            </span> 
         </div>
-
         <div class="container3">
             <h2 class="headerContainer3">Parceiros</h2>
             <span class="span2">Alguns parceiros deste projeto</span>
@@ -42,9 +40,7 @@ const { user } = storeToRefs(authStore);
               <img class="image1" src="../assets/JM_Logo_Dusk_Blue_RGB-removebg-preview.png" alt="">
               <img class="image1" src="../assets/novo-verde-removebg-preview.png" alt="">
             </div>
-            
         </div>
-
         <!-- footer -->
         <footer>
           <div class="firstContainer container">
@@ -105,6 +101,7 @@ footer {
   transform: translate(-50%, 50%);
 }
 .image {
+  margin-top: 0%;
   opacity: 0.85;
   object-fit: fill;
   width: 100%;

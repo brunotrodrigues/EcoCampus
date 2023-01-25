@@ -5,8 +5,8 @@ import * as Yup from "yup";
 import { useAuthStore } from "@/stores";
 
 const schema = Yup.object().shape({
-  username: Yup.string().required("Username is required"),
-  password: Yup.string().required("Password is required"),
+  username: Yup.string().required("Username é necessário"),
+  password: Yup.string().required("Password é necessário"),
 });
 
 async function onSubmit(values) {
@@ -17,10 +17,10 @@ async function onSubmit(values) {
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="image">
-      <img src="../img/ECOCAMPUS.png" alt="">
+  <div class="image">
+      <img src="../../assets/ecocampus2.svg" alt="">
     </div>
+  <div class="wrapper">
     <div class="card">
       <h4 class="card-header">Login</h4>
       <div class="card-body">
@@ -70,13 +70,21 @@ async function onSubmit(values) {
 </template>
 
 <style>
+
+.image {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+
 .wrapper {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   background-color: rgb(220, 220, 220);
+  background-color: white;
 }
 
 .card {
