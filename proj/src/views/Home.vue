@@ -1,4 +1,4 @@
-<script setup>
+span<script setup>
 import { storeToRefs } from 'pinia';
 
 import { useAuthStore } from '@/stores';
@@ -12,14 +12,14 @@ const { user } = storeToRefs(authStore);
         <h1>Bem-vindo {{user.firstName}}!</h1>
         <p><router-link to="/users">Manage Users</router-link></p>
     </div> -->
-    <div>
-        <!-- <img class="image" src="../assets/image4.jpg" alt=""> -->
-        <h1></h1>
-        <p>Esta aplicação tem como principal objetivo apoiar os alunos envolvidos no projeto eco-escolas.</p>
-        <p>Pretendemos elucidar os alunos a participarem em atividades, fazer registo de
+    <div class="containerBg">
+      <div class="container1">
+        <img class="image" src="../assets/noah-buscher-x8ZStukS2PM-unsplash croped.svg" alt="">
+        <span class="span1">Esta aplicação tem como principal objetivo apoiar os alunos envolvidos no projeto eco-escolas.
+        Pretendemos elucidar os alunos a participarem em atividades, fazer registo de
         problemas associados ao ambiente e proporcionar um melhor estilo de vida no que toca à
-        poupança e conservação do ambiente.</p>
-
+        poupança e conservação do ambiente.</span>
+    </div>
         <div class="container2">
             <h2 class="headerContainer2">O que é o programa Eco-Escolas?</h2>
             <span class="span">
@@ -33,9 +33,16 @@ const { user } = storeToRefs(authStore);
             
         </div>
 
-        <div>
-            <h2>Parceiros</h2>
-            <p>Alguns parceiros deste projeto</p>
+        <div class="container3">
+            <h2 class="headerContainer3">Parceiros</h2>
+            <span class="span2">Alguns parceiros deste projeto</span>
+            <div class="imageCenter">
+              <img class="image1" src="../assets/pingo-doce-removebg-preview.png" alt="">
+              <img class="image1" src="../assets/ERP-removebg-preview.png" alt="">
+              <img class="image1" src="../assets/JM_Logo_Dusk_Blue_RGB-removebg-preview.png" alt="">
+              <img class="image1" src="../assets/novo-verde-removebg-preview.png" alt="">
+            </div>
+            
         </div>
 
         <!-- footer -->
@@ -65,6 +72,7 @@ const { user } = storeToRefs(authStore);
           </div>
         </footer>
     </div>
+    
 
 </template>
 
@@ -77,11 +85,34 @@ footer {
   display: grid;
   grid-template-columns: minmax(80px, 8%) 300px auto 430px;
 }
-
-.image {
-  width: 100%;
+.containerBg {
+  background-color: white;
 }
-
+.image1 {
+  width: 20%;
+}
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.span1{
+  position: absolute;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.image {
+  opacity: 0.85;
+  object-fit: fill;
+  width: 100%;
+  height: 50%;
+}
+.imageCenter {
+  margin-left: 17%;
+}
 .container {
   display: flex;
 }
@@ -92,7 +123,26 @@ footer {
   grid-column: 1/2;
   justify-content: center;
 }
+.container3 {
+	margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.headerContainer3 {
+	font-size: 80px;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	line-height: 88.5%;
+	margin-bottom: 20px;  
+}
 
+.span2 {
+	margin-top: 10px;
+  font-family: 'Gilroy', sans-serif;
+  text-align: center;
+}
 .container2 {
 	margin-top: 3%;
 	background-color: white;
@@ -116,11 +166,6 @@ footer {
 	margin-bottom: 20px;
 }
 
-/* .headerContainer2 {
-	font-family: 'Gilroy', sans-serif;
-	font-weight: 600;
-	color: #b4b4b4;
-} */
 .span {
 	margin-top: 10px;
   font-family: 'Gilroy', sans-serif;
