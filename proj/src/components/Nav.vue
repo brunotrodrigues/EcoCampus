@@ -6,9 +6,10 @@ const authStore = useAuthStore();
 
 <template>
   <nav v-show="authStore.user" class="navbar navbar-expand navbar-dark">
-
+    <div>
+      <img  class="logo" src="../assets/ECOCAMPUS3.svg" alt="">
+    </div>
     <div class="navbar-nav">
-      <img  class="logo" src="../views/img/ecocampus2.svg" alt="">
         <router-link to="/" class="nav-item nav-link">Home</router-link>
         <router-link to="/activities" class="nav-item nav-link">Atividades</router-link>
         <router-link to="/questions" class="nav-item nav-link">Questionarios</router-link>
@@ -22,7 +23,10 @@ const authStore = useAuthStore();
 
 <style>
 .navbar {
-  background-color: rgb(77, 187, 110);
+  background-color: black;
+}
+.navbar-nav{
+  margin-left: 48%;
 }
 
 
