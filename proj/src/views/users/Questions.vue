@@ -263,6 +263,11 @@ footer {
   font-weight: 1000;
   font-size: 9px;
 }
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 .secondContainer p {
   font-weight: 700;
   font-size: 9px;
@@ -288,7 +293,7 @@ a {
   padding: 0 20px;
 }
 .forthContainer {
-  align-items: flex-end;
+  align-items: center;
 }
 .social {
   width: 50px;

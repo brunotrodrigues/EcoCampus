@@ -216,7 +216,7 @@ a {
 }
 
 .forthContainer {
-  align-items: flex-end;
+  align-items: center;
 }
 
 .social {
