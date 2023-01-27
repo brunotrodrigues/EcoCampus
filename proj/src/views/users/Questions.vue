@@ -1,18 +1,30 @@
 <template>
     <div>
-        <router-link v-for="(survey, index) in surveyQuestionarie" :key="index" tag="button" :to="{path: '/question/' + survey.id}">{{ survey.question }} <br><br> {{ survey.answer !== null ? valueQuestion(survey.answer, survey.choices): '' }}</router-link>
-        <div v-if="$root.answerIsNotNull">
-            {{ $root.answerIsNotNull }} {{ $root.answerIsNotNull > 1 ? 'questions' : 'question' }}
-        </div>
-        <div>
-            <button @click="isFinish">Finish</button>
-        </div>
-    </div>
-    <div>
-        <div v-for="item in survey.choices">
-            <input type="radio" :id="item.value" :value="item.value" v-model="survey.answer">
-            <label :for="item.value">{{ item.choice }}}</label>
-        </div>
+        <form @submit.prevent>
+            <div>
+                <label for="">Introduza o seu nome</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <h3>Em tua casa é habitual separar alguns resíduos e colocá-los para reciclar por exemplo no ecoponto?</h3>
+            <div>
+                <div>
+                    <input type="radio" id="sempre" value="sempre" name="sempre">
+                    <label for="">Sempre</label>
+                </div>
+                <div>
+                    <input type="radio" id="quaseSempre" value="quaseSempre" name="quaseSempre">
+                    <label for="">Quase Sempre</label>
+                </div>
+                <div>
+                    <input type="radio" id="asvezes" value="asvezes" name="asvezes">
+                    <label for="">Ás vezes</label>
+                </div>
+                <div>
+                    <input type="radio" id="nunca" value="nunca" name="nunca">
+                    <label for="">Nunca</label>
+                </div>
+            </div>
+        </form>
     </div>
 </template>
 
@@ -21,17 +33,6 @@
         data() {
             return {
                 surveyQuestionarie: [
-                    {
-                        id:1,
-                        question: 'Em tua casa é habitual separar alguns resíduos e colocá-los para reciclar por exemplo no ecoponto?',
-                        choices: [
-                            {value: 0, choice:'Sempre'},
-                            {value: 1, choice:'Quase Sempre'},
-                            {value: 2, choice:'Ás vezes'},
-                            {value: 3, choice:'Nunca'},
-                        ],
-                        answer: null,
-                    },
                     {
                         id:2,
                         question: 'Quando lavas os dentes a torneia do lavatório está aberta?',
@@ -121,23 +122,6 @@
                         answer: null,
                     }
                 ]
-            }
-        },
-        methods: {
-            isFinish() {
-                alert('finished')
-            },
-            valueQuestion(answer, choices){
-                var vm = this
-                return _.find(choices, ['value', _.parseInt(answer)]).choice
-            }
-        },
-        computed: {
-            answerIsNotNull() {
-                var vm = this
-                return _.filter(vm.survey, function(o){
-                    return o.answer == null
-                }).length
             }
         },
     }
