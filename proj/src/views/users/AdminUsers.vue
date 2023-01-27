@@ -12,11 +12,11 @@ const alertStore = useAlertStore();
 const route = useRoute();
 const id = route.params.id;
 
-let title = 'Add User';
+let title = 'Adicionar Utilizador';
 let user = null;
 if (id) {
     // edit mode
-    title = 'Edit User';
+    title = 'Editar Utilizador';
     ({ user } = storeToRefs(usersStore));
     usersStore.getById(id);
 }
@@ -64,7 +64,7 @@ async function onSubmit(values) {
                     <div class="invalid-feedback">{{ errors.firstName }}</div>
                 </div>
                 <div class="form-group col">
-                    <label>Ultimo Nome</label>
+                    <label>Apelido</label>
                     <Field name="lastName" type="text" class="form-control" :class="{ 'is-invalid': errors.lastName }" />
                     <div class="invalid-feedback">{{ errors.lastName }}</div>
                 </div>

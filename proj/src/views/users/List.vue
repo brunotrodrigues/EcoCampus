@@ -10,8 +10,8 @@ usersStore.getAll();
 </script>
 
 <template>
-    <h1 class="title">Lista de utilizadores</h1>
-    <router-link to="/users/add" class="btn btn-sm btn-success mb-2">Adicionar Utilizador</router-link>
+    <h1 class="title">Lista de Utilizadores</h1>
+    <router-link to="/users/add" class="btn btn-sm btn-success mb-2 ml-3">Adicionar Utilizador</router-link>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -54,4 +54,6 @@ usersStore.getAll();
 .title {
   text-align: center;
 }
+
+
 </style>
