@@ -315,7 +315,7 @@ a {
 }
 .options {
     margin-top: 15px;
-    margin-left: 10%;
+    margin-left: 11%;
 }
 .nameLabel{
     margin-left: 1%;
