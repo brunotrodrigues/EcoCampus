@@ -172,7 +172,7 @@ footer {
 #logo {
   width: 85px;
   position: relative;
-  left: -12px;
+  left: -80px;
 }
 
 .secondContainer {
