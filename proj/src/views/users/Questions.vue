@@ -1,12 +1,12 @@
 <template>
-    <div class="">
+    <div class="containerQuestions">
         <form @submit.prevent>
-            <div class="name">
-                <label for="">Introduza o seu nome:</label>
+            <div class="">
+                <label class="name" for="">Introduza o seu nome:</label>
                 <input class="nameLabel" type="text" id="name" name="name">
             </div>
-            <h4>Pergunta 1</h4>
-            <h5>Em tua casa é habitual separar alguns resíduos e colocá-los para reciclar por exemplo no ecoponto?</h5>
+            <h4 class="questionsNumber">Pergunta 1</h4>
+            <h5 class="question">Em tua casa é habitual separar alguns resíduos e colocá-los para reciclar por exemplo no ecoponto?</h5>
             <div class="options">
                 <div>
                     <input type="radio" id="sempre" value="sempre" name="sempre">
@@ -222,15 +222,29 @@ a {
   width: 50px;
   padding: 0 10px;
 }
-
+.containerQuestions{
+    margin-top: 0%;
+    background-color: white;
+    font-family: 'Gilroy', sans-serif;
+}
 .options {
-    margin-top: 1%;
+    margin-top: 15px;
+    margin-left: 10%;
 }
 .nameLabel{
     margin-left: 1%;
 }
 .name{
-    margin-top:3%;
+   margin-top: 2.5%;
+   margin-left: 5%;
+}
+.questionsNumber{
+    margin-left:5%;
+    margin-top: 1%;
+}
+.question{
+    margin-top: 15px;
+    margin-left: 8%;
 }
 
 </style>
