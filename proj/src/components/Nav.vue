@@ -12,6 +12,7 @@ const authStore = useAuthStore();
     <div class="navbar-nav">
         <router-link to="/" class="nav-item nav-link">Home</router-link>
         <router-link to="/activities" class="nav-item nav-link">Atividades</router-link>
+        <router-link to="/ocorrencias" class="nav-item nav-link">Ocorrências</router-link>
         <router-link to="/questions" class="nav-item nav-link">Questionários</router-link>
         <router-link to="/users" class="nav-item nav-link">AdminUsers</router-link>
         <router-link to="/perfil" class="nav-item nav-link">Perfil</router-link>
