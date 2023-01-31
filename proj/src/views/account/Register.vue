@@ -17,13 +17,16 @@ const schema = Yup.object().shape({
 async function onSubmit(values) {
   const usersStore = useUsersStore();
   const alertStore = useAlertStore();
+  values.isAdmin = false
   try {
     await usersStore.register(values);
-    await router.push("/account/login");
+    await router.push("/account/login"); 
+
     alertStore.success("Registration successful");
   } catch (error) {
     alertStore.error(error);
   }
+
 }
 </script>
 

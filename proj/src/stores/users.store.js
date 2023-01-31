@@ -18,7 +18,8 @@ export const useUsersStore = defineStore({
         async getAll() {
             this.users = { loading: true };
             try {
-                this.users = await fetchWrapper.get(baseUrl);    
+                this.users = await fetchWrapper.get(baseUrl);
+                console.log(users);    
             } catch (error) {
                 this.users = { error };
             }
