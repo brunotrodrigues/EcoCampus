@@ -27,7 +27,7 @@ const authStore = useAuthStore();
   background-color: black;
 }
 .navbar-nav{
-  margin-left: 48%;
+  margin-left: 40%;
 }
 
 
