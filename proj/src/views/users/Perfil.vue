@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  	<div>
 		<div class="container">
 			<div class="topContainer">
 				<img
@@ -63,91 +63,5 @@
 </template>
 
 <style>
-.container {
-	height: 121vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 70px;
-	background-color: black;
-	font-family: 'Gilroy', sans-serif;
-	color: white;
-}
 
-.topContainer {
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 44px;
-	font-weight: 800;
-}
-
-.topContainer h1 {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.secondContainer {
-	width: 70%;
-}
-
-.secondContainer h4 {
-	padding-left: 30px;
-}
-
-.infoContainer {
-	display: flex;
-	flex-direction: column;
-}
-
-.infoContainer span:first-child {
-	font-size: 12px;
-}
-
-.value {
-	font-weight: 700;
-	font-size: 21px;
-}
-
-.divider {
-	width: 100%;
-	height: 1px;
-	background-color: #bababa;
-}
-
-.editContainer {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding-left: 50px;
-	display: grid;
-	width: 50%;
-	grid-template-columns: 1.9fr 2fr 0.5fr 2fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.thirdContainer {
-	width: 70%;
-}
-
-.thirdContainer h4 {
-	padding-left: 30px;
-}
-
-.dobContainer {
-	grid-row: 3/4;
-}
-
-.nifContainer {
-	grid-row: 5/6;
-}
-.numberContainer {
-	grid-row: 3/4;
-	grid-column: 4/5;
-}
-
-.emailContainer {
-	grid-row: 1/2;
-	grid-column: 4/5;
-}
 </style>
