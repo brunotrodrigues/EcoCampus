@@ -28,6 +28,7 @@ const authStore = useAuthStore();
 }
 .navbar-nav{
   margin-left: 40%;
+  font-family: "Gilroy", sans-serif;
 }
 
 
