@@ -3,7 +3,7 @@
 </script>
 
 <template>
-		<div class="container">
+		<div>
 			<div class="secondContainer">
 				<h4>Edite os seus dados!</h4>
 				<div class="divider"></div>
@@ -27,7 +27,10 @@
 					
 				</div>
 			</div>
-			<button>Editar</button>
+      <div class="buttonContainer">
+        <button class="button">Editar</button>
+      </div>
+			
 		</div>
 		<!-- footer -->
 		<footer>
@@ -92,6 +95,21 @@ footer {
   width: 85px;
   position: relative;
   left: -80px;
+}
+
+.buttonContainer {
+    display: flex;
+    margin-left:5%;
+    margin-top: 3%;
+    
+}
+.button {
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    text-align: center;
+    font-weight: 700;
 }
 
 .secondContainer {
