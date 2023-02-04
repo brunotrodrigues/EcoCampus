@@ -3,10 +3,13 @@
 </script>
 
 <template>
-		<div>
-			<div class="secondContainer">
-				<h4>Edite os seus dados!</h4>
-				<div class="divider"></div>
+		<div class="containerBg">
+			<div class="container2">
+        <h2 class="headerContainer2">Edite os seus dados!</h2>
+          <span class="span1">
+            Nesta pagina pode editar os seus dados, como o seu nome, o seu apelido, o seu nome de utilizador e a sua password.
+          </span> 
+      </div>      
 				<div class="editContainer">
 					<div class="infoContainer nameContainer">
 						<span>Primeiro Nome:</span>
@@ -24,8 +27,6 @@
 						<span>Palavra-passe:</span>
 						<input type="password" name="password" id="password" />
 					</div>
-					
-				</div>
 			</div>
       <div class="buttonContainer">
         <button class="button">Editar</button>
@@ -78,6 +79,31 @@ footer {
   display: flex;
 }
 
+.headerContainer2 {
+  margin-top: 3%;
+  font-size: 60px;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	line-height: 88.5%;
+	margin-bottom: 20px;
+}
+
+.span1 {
+	margin-top: 10px;
+  font-family: 'Gilroy', sans-serif;
+  width: 50%;
+}
+
+.container2 {
+	margin-top: 0%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .firstContainer {
   height: 120px;
   position: absolute;
@@ -101,6 +127,7 @@ footer {
     display: flex;
     margin-left:5%;
     margin-top: 3%;
+    background-color: white;
     
 }
 .button {
@@ -117,6 +144,7 @@ footer {
   color: black;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }
 
 .secondContainer span {
