@@ -25,7 +25,7 @@
 					</div>
 					<div class="infoContainer surnameContainer">
 						<span>Palavra-passe:</span>
-						<input type="password" name="password" id="password" />
+						<input class="value" type="password" name="password" id="password" />
 					</div>
 			</div>
       <div class="buttonContainer">
@@ -73,12 +73,20 @@ footer {
 }
 .containerBg {
   background-color: white;
+  font-family: "Gilroy", sans-serif;
+}
+.value {
+  margin-left: 1%;
 }
 
 .container {
   display: flex;
 }
 
+.infoContainer {
+    margin-top: 2%;
+    margin-left: 8%;
+}
 .bottom {
   position:absolute;
   bottom:0;
@@ -145,6 +153,7 @@ footer {
     border: 3px solid #000000;
     text-align: center;
     font-weight: 700;
+    margin-left: 10%;
 }
 
 .secondContainer {
