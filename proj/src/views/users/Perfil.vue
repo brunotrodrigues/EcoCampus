@@ -34,7 +34,7 @@
 			
 		</div>
 		<!-- footer -->
-		<footer>
+		<footer class="bottom">
         <div class="firstContainer container">
             <img src="../../assets/ecocampus2.svg" alt="Logo" id="logo" />
         </div>
@@ -79,6 +79,25 @@ footer {
   display: flex;
 }
 
+.bottom {
+  position:absolute;
+  bottom:0;
+}
+
+#logo {
+  width: 85px; 
+  position: relative;
+  right: -80px;
+}
+
+.firstContainer {
+  height: 120px;
+  position: absolute;
+  grid-column: 1/2;
+  right: -500px;
+  justify-content: center;
+}
+
 .headerContainer2 {
   margin-top: 3%;
   font-size: 60px;
@@ -104,23 +123,12 @@ footer {
 	justify-content: center;
 }
 
-.firstContainer {
-  height: 120px;
-  position: absolute;
-  grid-column: 1/2;
-  justify-content: center;
-}
+
 
 .span {
 	margin-top: 10px;
   font-family: 'Gilroy', sans-serif;
   width: 50%;
-}
-
-#logo {
-  width: 85px;
-  position: relative;
-  left: -80px;
 }
 
 .buttonContainer {
