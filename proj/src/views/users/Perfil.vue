@@ -97,12 +97,8 @@ footer {
 }
 
 .infoContainer {
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 8%;
-}
-.bottom {
-  position:absolute;
-  bottom:0;
 }
 
 #logo {
@@ -115,7 +111,6 @@ footer {
   height: 120px;
   position: absolute;
   grid-column: 1/2;
-  right: -500px;
   justify-content: center;
 }
 
