@@ -81,15 +81,15 @@ footer {
 }
 .value2 {
   margin-left: 1%;
-  width: 250px;
+  width: 255px;
 }
 .value3 {
   margin-left: 1%;
-  width: 167px;
+  width: 163px;
 }
 .value4 {
   margin-left: 1%;
-  width: 197px;
+  width: 200px;
 }
 
 .container {
@@ -99,6 +99,9 @@ footer {
 .infoContainer {
     margin-top: 3%;
     margin-left: 8%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-size: 18px;  
 }
 
 #logo {
