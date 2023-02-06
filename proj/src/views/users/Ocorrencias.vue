@@ -5,7 +5,31 @@
 
 
 <template>
-  <h1>Teste</h1>
+  <div class="containerBg">
+			<div class="container2">
+        <h2 class="headerContainer2">Registe as ocorrências!</h2>
+          <span class="span1">
+            Nesta pagina pode registar as ocorrências que visualiza no espaço escolar. Como por exemplo (na sala B201 existe uma lâmpada fundida). 
+          </span> 
+      </div>      
+				<div class="editContainer">
+					<div class="infoContainer nameContainer">
+						<span>Titulo:</span>
+						<input class="value1" type="text" name="titulo" id="titulo" />
+					</div>
+					<div class="infoContainer surnameContainer">
+						<span>Descrição:</span>
+						<input class="value2" type="text" name="lastName" id="lastName" />
+					</div>
+					<div class="infoContainer surnameContainer">
+						<span>Localização:</span>
+						<input class="value3" type="text" name="username" id="username" />
+					</div>
+			</div>
+      <div class="buttonContainer">
+        <button class="button">Enviar</button>
+      </div>
+  </div>    
   <!-- footer -->
   <footer>
         <div class="firstContainer container">
@@ -56,6 +80,11 @@ footer {
   position: absolute;
   grid-column: 1/2;
   justify-content: center;
+}
+
+.span1 {
+  justify-content: center;
+  text-align: center;
 }
 
 .span {

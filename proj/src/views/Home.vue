@@ -31,6 +31,14 @@ const { user } = storeToRefs(authStore);
               especificidade de cada escola relativamente aos seus alunos e caraterísticas do meio envolvente.
             </span> 
         </div>
+        <div class="container2">
+          <h2 class="headerContainer2">Concelho Eco-Escolas</h2>
+          <span class="span">
+            Queres fazer participar no concelho Eco-Escolas? Aqui podes te inscrever, basta carregar no botão e ficas automaticamente
+            inscrito no concelho.
+          </span>
+          <button class="concelho">Increve-te!</button>
+        </div>
         <div class="container3">
             <h2 class="headerContainer3">Parceiros</h2>
             <span class="span2">Alguns parceiros deste projeto</span>
@@ -194,7 +202,14 @@ footer {
   max-width: 180px;
   margin-bottom: 0;
 }
-
+.concelho {
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  font-weight: bold;
+  margin-top: 3%;
+  font-size: 20px;
+}
 .bold {
   font-weight: 700 !important;
   color: #212020;
