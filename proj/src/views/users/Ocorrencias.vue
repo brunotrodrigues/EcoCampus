@@ -13,17 +13,17 @@
           </span> 
       </div>      
 				<div class="editContainer">
-					<div class="infoContainer nameContainer">
+					<div class="infoContainer">
 						<span>Titulo:</span>
-						<input class="value1" type="text" name="titulo" id="titulo" />
+						<input class="value1" type="text" name="titleOc" id="titleOc" />
 					</div>
-					<div class="infoContainer surnameContainer">
+					<div class="infoContainer">
 						<span>Descrição:</span>
-						<input class="value2" type="text" name="lastName" id="lastName" />
+						<input class="value2" type="text" name="descriptionOC" id="descriptionOC" />
 					</div>
-					<div class="infoContainer surnameContainer">
+					<div class="infoContainer">
 						<span>Localização:</span>
-						<input class="value3" type="text" name="username" id="username" />
+						<input class="value3" type="text" name="locationOco" id="locationOco" />
 					</div>
 			</div>
       <div class="buttonContainer">
