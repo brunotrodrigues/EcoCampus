@@ -23,5 +23,4 @@ export const useOcorrencieStore = defineStore('OcorrencieStore',{
     },
     mutations: {},
     actions: {},
-    
 })
