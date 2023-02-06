@@ -333,7 +333,7 @@ a {
 }
 .questionsNumber{
     margin-left:5%;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 .question{
     margin-top: 15px;

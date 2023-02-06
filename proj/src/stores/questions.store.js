@@ -2,6 +2,10 @@ import { defineStore } from "pinia";
 
 export const useQuestionStore = defineStore('QuestionStore',{
     state: {
+        usernameQuestion: {
+            id: 0,
+            username: 'antonio'
+        },
         arrayQuestions: [
 			{
 				id: 1,
