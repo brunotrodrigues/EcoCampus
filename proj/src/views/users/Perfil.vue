@@ -13,19 +13,19 @@
 				<div class="editContainer">
 					<div class="infoContainer nameContainer">
 						<span>Primeiro Nome:</span>
-						<input class="value" type="text" name="firstName" id="firstName" />
+						<input class="value1" type="text" name="firstName" id="firstName" />
 					</div>
 					<div class="infoContainer surnameContainer">
 						<span>Apelido:</span>
-						<input class="value" type="text" name="lastName" id="lastName" />
+						<input class="value2" type="text" name="lastName" id="lastName" />
 					</div>
 					<div class="infoContainer surnameContainer">
 						<span>Nome de utilizador:</span>
-						<input class="value" type="text" name="username" id="username" />
+						<input class="value3" type="text" name="username" id="username" />
 					</div>
 					<div class="infoContainer surnameContainer">
 						<span>Palavra-passe:</span>
-						<input class="value" type="password" name="password" id="password" />
+						<input class="value4" type="password" name="password" id="password" />
 					</div>
 			</div>
       <div class="buttonContainer">
@@ -75,8 +75,21 @@ footer {
   background-color: white;
   font-family: "Gilroy", sans-serif;
 }
-.value {
+.value1 {
   margin-left: 1%;
+  width: 200px;
+}
+.value2 {
+  margin-left: 1%;
+  width: 250px;
+}
+.value3 {
+  margin-left: 1%;
+  width: 167px;
+}
+.value4 {
+  margin-left: 1%;
+  width: 197px;
 }
 
 .container {
