@@ -43,10 +43,14 @@ export default {
       </div>
     </div>
     <!--  -->
-    <div>
-      <h5>Indica aqui a tua ideia num texto breve</h5>
-      <textarea name="ideia" id="ideia" cols="40" rows="4"></textarea>
+    <div class="ideias">
+      <h3>Indica aqui a tua ideia num breve texto</h3>
+      <textarea class="ideiasBox" name="ideia" id="ideia" cols="40" rows="4"></textarea>
     </div>
+    <div >
+      <button class="actButton1">Enviar</button>
+    </div>
+    
   </div>
   <!-- footer -->
   <footer>
@@ -78,6 +82,24 @@ export default {
 </template>
 
 <style>
+.ideias {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+}
+
+.ideiasBox {
+  margin: 1%;
+}
+
+.actButton1 {
+  background-color: white;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: 47.5%;
+}
+
 .container1 {
   background-color: white;
 }
