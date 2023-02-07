@@ -17,8 +17,6 @@ export default {
 };
 </script>
 
-<!-- fazer form  -->
-
 <template>
   <div class="container1">
     <div class="container2">

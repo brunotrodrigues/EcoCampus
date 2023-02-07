@@ -43,7 +43,7 @@ usersStore.getAll();
             </tr>
             <tr v-if="users.error">
                 <td colspan="4">
-                    <div class="text-danger">Error loading users: {{users.error}}</div>
+                    <div class="text-danger">Erro a carregar utilizadores: {{users.error}}</div>
                 </td>
             </tr>            
         </tbody>

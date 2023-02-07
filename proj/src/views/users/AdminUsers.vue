@@ -30,7 +30,6 @@ const schema = Yup.object().shape({
         .required('Username é necessario'),
     password: Yup.string()
         .transform(x => x === '' ? undefined : x)
-        // password optional in edit mode
         .concat(user ? null : Yup.string().required('Password é necessario'))
         .min(6, 'Password tem que ter pelo menos 6 caracteres')
 });
@@ -40,10 +39,10 @@ async function onSubmit(values) {
         let message;
         if (user) {
             await usersStore.update(user.value.id, values)
-            message = 'User updated';
+            message = 'Utilizador atualizado';
         } else {
             await usersStore.register(values);
-            message = 'User added';
+            message = 'Utilizador adicionado';
         }
         await router.push('/users');
         alertStore.success(message);
@@ -99,7 +98,7 @@ async function onSubmit(values) {
     </template>
     <template v-if="user?.error">
         <div class="text-center m-5">
-            <div class="text-danger">Error loading user: {{user.error}}</div>
+            <div class="text-danger">Erro a carregar o utilizador: {{user.error}}</div>
         </div>
     </template>
 </template>

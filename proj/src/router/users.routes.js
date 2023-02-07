@@ -1,4 +1,4 @@
-import { EditProfile, AdminUsers, Layout, List } from "@/views/users";
+import { Perfil, AdminUsers, Layout, List } from "@/views/users";
 
 export default {
   path: "/users",
@@ -7,6 +7,6 @@ export default {
     { path: "", component: List },
     { path: "add", component: AdminUsers },
     { path: "edit/:id", component: AdminUsers },
-    { path: "editProfile/:id", component: EditProfile },
+    { path: "edit/:id", component: Perfil },
   ],
 };

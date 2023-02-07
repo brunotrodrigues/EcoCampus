@@ -6,12 +6,12 @@ import { useUsersStore, useAlertStore } from "@/stores";
 import { router } from "@/router";
 
 const schema = Yup.object().shape({
-  firstName: Yup.string().required("First Name is required"),
-  lastName: Yup.string().required("Last Name is required"),
-  username: Yup.string().required("Username is required"),
+  firstName: Yup.string().required("Primeiro nome é necessario"),
+  lastName: Yup.string().required("Apelido é necessario"),
+  username: Yup.string().required("Nome de utilizador é necessario"),
   password: Yup.string()
-    .required("Password is required")
-    .min(6, "Password must be at least 6 characters"),
+    .required("Password é necessaria")
+    .min(6, "Password tem que ter pelo menos 6 caracteres"),
 });
 
 async function onSubmit(values) {
@@ -22,7 +22,7 @@ async function onSubmit(values) {
     await usersStore.register(values);
     await router.push("/account/login"); 
 
-    alertStore.success("Registration successful");
+    alertStore.success("Registo bem sucessido");
   } catch (error) {
     alertStore.error(error);
   }

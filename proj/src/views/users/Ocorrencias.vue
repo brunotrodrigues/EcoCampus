@@ -2,8 +2,6 @@
 
 </script>
 
-
-
 <template>
   <div class="containerBg">
 			<div class="container2">
