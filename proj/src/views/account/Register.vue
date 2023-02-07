@@ -33,15 +33,15 @@ async function onSubmit(values) {
 <template>
   <div class="wrapper">
     <div class="card">
-      <h4 class="card-header">Register</h4>
+      <h4 class="card-header">Registar</h4>
       <div class="card-body">
         <Form
           @submit="onSubmit"
           :validation-schema="schema"
           v-slot="{ errors, isSubmitting }"
-        >
+          >
           <div class="form-group">
-            <label>First Name</label>
+            <label>Primeiro Nome</label>
             <Field
               name="firstName"
               type="text"
@@ -51,7 +51,7 @@ async function onSubmit(values) {
             <div class="invalid-feedback">{{ errors.firstName }}</div>
           </div>
           <div class="form-group">
-            <label>Last Name</label>
+            <label>Apelido</label>
             <Field
               name="lastName"
               type="text"
@@ -61,7 +61,7 @@ async function onSubmit(values) {
             <div class="invalid-feedback">{{ errors.lastName }}</div>
           </div>
           <div class="form-group">
-            <label>Username</label>
+            <label>Nome de Utilizador</label>
             <Field
               name="username"
               type="text"
@@ -82,14 +82,10 @@ async function onSubmit(values) {
           </div>
           <div class="form-group formBtns">
             <button class="btn formBtn" :disabled="isSubmitting">
-              <span
-                v-show="isSubmitting"
-                class="spinner-border spinner-border-sm mr-1"
-              ></span>
-              Register
+              <span v-show="isSubmitting" class="spinner-border spinner-border-sm mr-1"></span>
+              Registar
             </button>
-            <router-link to="login" class="btn formBtn cancelBtn"
-              >Cancel</router-link
+            <router-link to="login" class="btn formBtn cancelBtn">Cancelar</router-link
             >
           </div>
         </Form>
@@ -101,5 +97,12 @@ async function onSubmit(values) {
 <style>
 .cancelBtn {
   background-color: rgb(233, 30, 30);
+}
+.wrapper {
+  margin-top: 5%;
+}
+.formBtns {
+  align-items: center;
+  justify-content: center;
 }
 </style>
