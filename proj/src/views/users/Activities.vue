@@ -1,4 +1,8 @@
 <script>
+
+// import { useAuthStore } from "./auth.store";
+// import { useActStore } from "../../stores/act.store";
+
 export default {
   data() {
     return {

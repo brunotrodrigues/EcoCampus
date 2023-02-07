@@ -13,7 +13,7 @@ export const useActStore = defineStore('ActStore',{
             {
 				id: 1,
 				titleAct: 'Atividade 2',
-				descriptionAct: 'Limpar as florestas    ',
+				descriptionAct: 'Limpar as florestas',
 			},
             {
 				id: 2,
@@ -26,6 +26,12 @@ export const useActStore = defineStore('ActStore',{
 				descriptionAct: 'Poster Eco-Códgio',
 			},
 		],
+		arrayIdeias: [
+			{
+				id: 0,
+				ideia: ''
+			}
+		]
     },
     getters: {
         getActivitiesByID: (state) => (id) =>

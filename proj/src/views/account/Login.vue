@@ -60,7 +60,7 @@ async function onSubmit(values) {
               Login
             </button>
             <router-link to="register" class="btn formBtn"
-              >Register</router-link
+              >Registar</router-link
             >
           </div>
         </Form>
