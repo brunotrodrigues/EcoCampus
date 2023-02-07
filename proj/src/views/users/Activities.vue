@@ -17,6 +17,12 @@ export default {
 
 <template>
   <div class="container1">
+    <div class="container2">
+        <h2 class="headerContainer2">Increve-te nas atividades!</h2>
+          <span class="span1">
+            Nesta pagina podes increver nas atividades listadas ou se tiveres boas sugestões para atividades que possam ser introduzidas no futuro também podes indicar a tua ideia. 
+          </span> 
+      </div> 
     <div class="activitiesWrapper">
       <div class="cardsGrid">
         <div v-for="item in items" :key="item.id">
@@ -34,7 +40,38 @@ export default {
         </div>
       </div>
     </div>
+    <!--  -->
+    <div>
+      <h5>Indica aqui a tua ideia num texto breve</h5>
+      <textarea name="ideia" id="ideia" cols="40" rows="4"></textarea>
+    </div>
   </div>
+  <!-- footer -->
+  <footer>
+        <div class="firstContainer container">
+            <img src="../../assets/ecocampus2.svg" alt="Logo" id="logo" />
+        </div>
+            <div class="secondContainer container">
+                <span>ECOCAMPUS, Inc. © 2023</span>
+                <p>
+                    A <span class="bold">ECOCAMPUS</span> é um projeto da
+                    <span class="bold">Escola Superior de Media Artes e Design</span>
+                    do
+                    <span class="bold">Instituto Politécnico do Porto</span>
+                </p>
+            </div>
+            <div class="thirdContainer container">
+                <router-link class="aa" to="#">Privacidade</router-link>
+                <router-link class="aa" to="#">Termos de Utilização</router-link>
+                <router-link class="aa" to="#">Contactos</router-link>
+            </div>
+            <div class="forthContainer container">
+                <img src="../../assets/instagram-svgrepo-com.svg" alt="" class="social" />
+                <img src="../../assets/facebook-svgrepo-com.svg" alt="" class="social" />
+                <img src="../../assets/tiktok-svgrepo-com.svg" alt="" class="social" />
+                <img src="../../assets/twitter-svgrepo-com.svg" alt="" class="social" />
+            </div>
+    </footer>
   
 </template>
 
