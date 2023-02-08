@@ -13,15 +13,15 @@
 				<div class="editContainer">
 					<div class="infoContainer">
 						<span>Titulo:</span>
-						<input class="value1" type="text" name="titleOc" id="titleOc" />
+						<input class="value5" type="text" name="titleOc" id="titleOc" />
 					</div>
 					<div class="infoContainer">
 						<span>Descrição:</span>
-						<input class="value2" type="text" name="descriptionOC" id="descriptionOC" />
+						<input class="value6" type="text" name="descriptionOC" id="descriptionOC" />
 					</div>
 					<div class="infoContainer">
 						<span>Localização:</span>
-						<input class="value3" type="text" name="locationOco" id="locationOco" />
+						<input class="value7" type="text" name="locationOco" id="locationOco" />
 					</div>
 			</div>
       <div class="buttonContainer">
@@ -67,6 +67,20 @@ footer {
 }
 .containerBg {
   background-color: white;
+}
+
+.value5 {
+  width: 250px;
+  margin-left: 1%;
+}
+.value6 {
+  width: 215px;
+  margin-left: 1%;
+}
+
+.value7 {
+  width: 198px;
+  margin-left: 1%;
 }
 
 .container {
