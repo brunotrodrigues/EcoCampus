@@ -7,10 +7,10 @@ export default {
   data() {
     return {
       items: [
-        { id: 1, name: "Atividade 1", description: "Limpar as ruas" },
-        { id: 2, name: "Atividade 2", description: "Limpar as florestas" },
-        { id: 3, name: "Atividade 3", description: "Fazer reciclagem" },
-        { id: 4 , name: "Atividade 4", description: "Poster Eco-Código" },  
+        { id: 1, name: "Atividade 1", description: "Limpar as ruas", photo:"" },
+        { id: 2, name: "Atividade 2", description: "Limpar as florestas", photo:"" },
+        { id: 3, name: "Atividade 3", description: "Fazer reciclagem", photo:"" },
+        { id: 4 , name: "Atividade 4", description: "Poster Eco-Código", photo:"" },  
       ],
     };
   },
