@@ -8,10 +8,6 @@ const { user } = storeToRefs(authStore);
 </script>
 
 <template>
-    <!-- <div v-if="user">
-        <h1>Bem-vindo {{user.firstName}}!</h1>
-        <p><router-link to="/users">Manage Users</router-link></p>
-    </div> -->
     <div class="containerBg">
       <div class="container1">
         <img class="image" src="../assets/noah-buscher-x8ZStukS2PM-unsplash croped.svg" alt="">
